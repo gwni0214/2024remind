@@ -51,66 +51,133 @@
             }   
 
         * {
+            font-family: "Mukta", sans-serif;
             margin: 0;
             padding: 0;
         }
-        body {
+        .wrap {
             width: 794px;
             height: 1123px;
             margin: 0;
             padding: 32px;
             box-sizing: border-box;
-            background-color: pink;
+            background-color: #f0f0f0;
         }
+        
         header {
             display: flex;
             justify-content: space-between;
         }
-        .name {
-            font-size: 30px;
+        header .profile {
+            /* background-color: #666; */
+            width: 400px;
         }
-        .pic {
-            width: 150px;
-            height: 200px;
+        header .profile .name {
+            font-size: 40px;
+            font-weight: bold;
+            /* background-color: green; */
+        }
+        header .profile .desc {
+            margin-top: 16px;   
+            /* font-size: 14px; */
         }
         img {
             width: 100%;
+            border-radius: 16px;
         }
         main {
+            /* background-color: #888; */
             margin-top: 32px;
             width: 100%;
             height: 100%;
             display: flex;
            
         }
-        .banner {
-            width: 30%;
-            height: 20%;
-            background-color: #fff;
+        .right_area {
+            width: calc(794px * 0.3);
+            height: calc(1123px);
+            background-color: #1ABC9C;
+            position: absolute;
+            top: 0;
+            right: 32px;
+            z-index: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            /* border-radius: 16px; */
         }
-        .content {
-            margin-left: 50px;
-            width: 50%;
-            height: 30%;
-            background-color: powderblue;
+        .pic {
+            margin-top: 32px;
+            width: calc(413px * 0.4);
+            height: calc(531px * 0.4);
+            z-index: 10;
+        }
+        .info {
+            margin-top: 32px;
+            color: #fff;
+        }
+        .info .email {
+            display: flex;
+            align-items: center;
+        }
+        .info .email img {
+            width: 33px;
+            height: 33px;
+        }
+        .info .email p {
+            margin-left: 16px;
+        }
+        .info .instagram {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+        }
+        .info .instagram img {
+            width: 33px;
+            height: 33px;
+        }
+        .info .instagram p {
+            margin-left: 16px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="name mukta-regular">
-            <p>Geunhee</p>
-            <p>Park</p>
+    <div class="wrap">
+        <div class="right_area">
+            <div class="pic">
+                <img src="/IMG_0997.JPG" alt="">
+            </div>
+            <div class="info">
+                <div class="email">
+                    <img src="/gmail.svg" alt="">
+                    <p>sbxjs6999@gmail.com</p>
+                </div>
+                <div class="instagram">
+                    <img src="/isntagram.svg" alt="">
+                    <p>gwni0214</p>
+                </div>
+                
+            </div>
         </div>
-        <div class="pic">
-            <img src="/IMG_0997.JPG" alt="">
-        </div>
-    </header>
-    <main>
-        <div class="banner"></div>
-        <div class="content"></div>
-    </main>
-    <footer></footer>
+        <header>
+            <div class="profile">
+                <p class="name">Geunhee Park</p>
+                <p class="desc">
+                    Je suis un jeune travailleur actuellement en France avec un visa Vacances-Travail. Fort d'une expérience dans le commerce de détail, je souhaite découvrir la culture vestimentaire française tout en mettant à profit mes compétences en service client et en gestion de magasin.
+                </p>
+            </div>
+        </header>
+        <main>
+            <div class="exp">
+                <p style="font-size: 20px; font-weight: 500;">💼 Expériences Professionnelles</p>
+                <p>Vendeur/Assistant de magasin<br>
+                    Uniqlo, Kimpo Airport (Corée du Sud) | Août 2023 - Mai 2024</p>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+    
 
   <!-- <ul>
     <li>인적사항 - 사진,이름, 이메일,주소,전화번호,SNS</li>
@@ -120,5 +187,37 @@
     <li>경력</li>
     <li>할줄아는거</li>
   </ul> -->
+  <p>
+    GEUNHEE PARK
+Adresse : (프랑스에서 머무는 현재 주소 기입)
+Téléphone : (프랑스 전화번호 기입 가능)
+E-mail : sbxjs6999@gmail.com
+
+🎯 Profil
+Je suis un jeune travailleur actuellement en France avec un visa Vacances-Travail. Ayant une expérience significative dans le secteur du commerce de détail, je souhaite élargir mes horizons en découvrant la culture vestimentaire française tout en apportant mes compétences en service client et gestion de magasin.
+
+💼 Expériences Professionnelles
+Vendeur/Assistant de magasin
+Uniqlo, Kimpo Airport (Corée du Sud) | Août 2023 - Mai 2024
+
+Accueil et conseil des clients, gestion des transactions.
+Gestion quotidienne du magasin, y compris la réassortiment des rayons et le maintien de la propreté.
+Contribution à l'atteinte des objectifs de vente et à l'amélioration de la satisfaction client.
+🎓 Formation
+Diplôme de 2 ans en Technologie Automobile
+Ajou Motor College, Corée du Sud | Diplômé en 2022
+
+💻 Compétences
+Service client: Expérience avérée dans l'accueil et le conseil aux clients.
+Gestion de magasin: Réassortiment, inventaire et organisation des produits.
+Langues: Coréen (natif), Français (conversationnel).
+🎨 Centres d'intérêt
+Mode et tendances vestimentaires
+Découverte de nouvelles cultures et voyages
+💡 Objectif
+Contribuer à un environnement de vente dynamique en France tout en continuant à développer mes compétences linguistiques et professionnelles.
+
+
+  </p>
 </body>
 </html>
