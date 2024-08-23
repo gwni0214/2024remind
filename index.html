@@ -86,12 +86,20 @@
             border-radius: 16px;
         }
         main {
+            
             /* background-color: #888; */
             margin-top: 32px;
-            width: 100%;
-            height: 100%;
+            width: 400px;
+            /* height: 100%; */
             display: flex;
+            flex-direction: column;
            
+        }
+        main .diploma {
+            margin-top: 32px;
+        }
+        main .skills {
+            margin-top: 32px;
         }
         .right_area {
             width: calc(794px * 0.3);
@@ -126,10 +134,10 @@
             height: 33px;
         }
         .info .email p {
-            margin-left: 16px;
+            margin-left: 8px;
         }
         .info .instagram {
-            margin-top: 16px;
+            
             display: flex;
             align-items: center;
         }
@@ -138,7 +146,54 @@
             height: 33px;
         }
         .info .instagram p {
-            margin-left: 16px;
+            margin-left: 8px;
+        }
+        .info .phone {
+            
+            display: flex;
+            align-items: center;
+        }
+        .info .phone img {
+            width: 33px;
+            height: 33px;
+        }
+        .info .phone p {
+            margin-left: 8px;
+        }
+        .info .home {
+            
+            display: flex;
+            align-items: center;
+        }
+        .info .home img {
+            width: 33px;
+            height: 33px;
+        }
+        .info .home p {
+            margin-left: 8px;
+        }
+
+        .info .birth {
+            
+            display: flex;
+            align-items: center;
+        }
+        .info .birth img {
+            width: 33px;
+            height: 33px;
+        }
+        .info .birth p {
+            margin-left: 8px;
+        }
+        .border {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            width: 400px;
+            height: 1px;
+            background-color: #999;
+        }
+        .profile_icon {
+            margin-top: 32px;
         }
     </style>
 </head>
@@ -149,75 +204,76 @@
                 <img src="/IMG_0997.JPG" alt="">
             </div>
             <div class="info">
-                <div class="email">
+                <div class="email profile_icon">
                     <img src="/gmail.svg" alt="">
                     <p>sbxjs6999@gmail.com</p>
                 </div>
-                <div class="instagram">
+                <div class="instagram profile_icon">
                     <img src="/isntagram.svg" alt="">
                     <p>gwni0214</p>
                 </div>
-                
+                <div class="phone profile_icon">
+                    <img src="/phone.svg" alt="">
+                    <p>+33 6 12 34 56 78</p>
+                </div>
+                <div class="home profile_icon">
+                    <img src="/home.svg" alt="">
+                    <p>Poitiers</p>
+                </div>
+                <div class="birth profile_icon">
+                    <img src="/calendar.svg" alt="">
+                    <p>14. 02. 1997</p>
+                </div>
             </div>
         </div>
         <header>
             <div class="profile">
                 <p class="name">Geunhee Park</p>
                 <p class="desc">
-                    Je suis un jeune travailleur actuellement en France avec un visa Vacances-Travail. Fort d'une expérience dans le commerce de détail, je souhaite découvrir la culture vestimentaire française tout en mettant à profit mes compétences en service client et en gestion de magasin.
+                    Forte de diverses expériences professionnelles en Corée du Sud,
+                     je séjourne actuellement en France pour découvrir et m’imprégner de la culture française. Je suis à la recherche d'un emploi pour financer mon séjour.
                 </p>
             </div>
         </header>
         <main>
             <div class="exp">
-                <p style="font-size: 20px; font-weight: 500;">💼 Expériences Professionnelles</p>
-                <p>Vendeur/Assistant de magasin<br>
-                    Uniqlo, Kimpo Airport (Corée du Sud) | Août 2023 - Mai 2024</p>
+                <p style="font-size: 20px; font-weight: 500; margin-bottom: 16px;">💼 Expériences Professionnelles</p>
+                
+                    Uniqlo, Kimpo Airport (Séoul, Corée du Sud)<br>Août 2023 - Mai 2024 / Service client et gestion du magasin</p>
+                    <div class="border"></div>
+                    <p>
+                        The Join (Entreprise de Développement de Logiciels)<br>
+                        (Séoul, Corée du Sud)
+                        <br>Juin 2022 - Juillet 2023 / Programmeur
+                    </p>
+                    <div class="border"></div>
+                    <p>
+                        Café Magnolia (Ansan, Corée du Sud)<br>Avril 2020 - Mai 2022 / Barista
+                    </p>
+            </div>
+            <div class="diploma">
+                <p>
+                    🎓 diplôme<br>
+                    Diplôme de 2 ans en Technologie Automobile
+                    Ajou Motor College, Corée du Sud | Diplômé en 2020
+                </p>
+            </div>
+            <div class="skills">
+                <p>
+                    💻 Compétences<br>
+                    Service client: Expérience avérée dans l'accueil et le conseil aux clients.
+                    <div class="border"></div>
+                    Gestion de magasin: Réassortiment, inventaire et organisation des produits.
+                    <div class="border"></div>
+                    Langues: Coréen (natif), Français (débutant), japonais (conversationnel), anglais (conversationnel)
+                    <div class="border"></div>
+                    Programmation : Développement web (intermédiaire)<br>  
+                    <div class="border"></div>
+                    Barista et Bartender : Obtention de certifications nationales (Corée du Sud)
+                </p>
             </div>
         </main>
         <footer></footer>
-    </div>
-    
-
-  <!-- <ul>
-    <li>인적사항 - 사진,이름, 이메일,주소,전화번호,SNS</li>
-    <li>간단한 자기소개</li>
-    <li>학력</li>
-    <li>구사언어</li>
-    <li>경력</li>
-    <li>할줄아는거</li>
-  </ul> -->
-  <p>
-    GEUNHEE PARK
-Adresse : (프랑스에서 머무는 현재 주소 기입)
-Téléphone : (프랑스 전화번호 기입 가능)
-E-mail : sbxjs6999@gmail.com
-
-🎯 Profil
-Je suis un jeune travailleur actuellement en France avec un visa Vacances-Travail. Ayant une expérience significative dans le secteur du commerce de détail, je souhaite élargir mes horizons en découvrant la culture vestimentaire française tout en apportant mes compétences en service client et gestion de magasin.
-
-💼 Expériences Professionnelles
-Vendeur/Assistant de magasin
-Uniqlo, Kimpo Airport (Corée du Sud) | Août 2023 - Mai 2024
-
-Accueil et conseil des clients, gestion des transactions.
-Gestion quotidienne du magasin, y compris la réassortiment des rayons et le maintien de la propreté.
-Contribution à l'atteinte des objectifs de vente et à l'amélioration de la satisfaction client.
-🎓 Formation
-Diplôme de 2 ans en Technologie Automobile
-Ajou Motor College, Corée du Sud | Diplômé en 2022
-
-💻 Compétences
-Service client: Expérience avérée dans l'accueil et le conseil aux clients.
-Gestion de magasin: Réassortiment, inventaire et organisation des produits.
-Langues: Coréen (natif), Français (conversationnel).
-🎨 Centres d'intérêt
-Mode et tendances vestimentaires
-Découverte de nouvelles cultures et voyages
-💡 Objectif
-Contribuer à un environnement de vente dynamique en France tout en continuant à développer mes compétences linguistiques et professionnelles.
-
-
-  </p>
+    </div>  
 </body>
 </html>
